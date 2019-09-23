@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="ExpresionesApp">
+<head>
+	<title>Expresiones</title>
+	<meta name="viewport" content="width=device-widht">
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+	<script type="text/javascript" src="codigo.js"></script>
+</head>
+<body>
+	<div ng-controller="PruebaController">
+		<strong>{{mensaje}} {{segundoMensaje}}</strong>
+		<p>El libro fue escrito por <strong>{{libro.autor}}</strong>, cuyo título es <strong>"{{libro.titulo}}"</strong> y trata sobre <strong>{{libro.tema}}</strong>.</p>
+		<p>ISBN:<strong>{{libro.isbn}}</strong></p>
+		<p>Precio:<strong>{{20 | currency:"€"}}</strong></p>
+		<p>Fecha de lanzamiento: <strong>{{9966558833 | date}}</strong></p>
+		<!-- {{valor | filtro}}: los filtros de expresiones se suelen asignar para dar formato a texto o números representados dentro de una expresión. Así, podemos utilizar los siguientes:
+		-Divisas: filtro currency: "€" "USD $"
+		-Mayúsculas: filtro uppercase
+		-Minúsculas: filtro lowecase
+		-{{false | number}}: conversión de número o booleano
+		-{{3.1415926535 | number: 2}}: filtro number, con 2 decimales
+		-{{215.345 | number: 2 | currency:"€"}}
+		-{{'valor' | date}}: representación de fechas con AngularJS
+		-{{'valor' | date:'dd/mm/yy': representa la fecha en modo día/mes/año
+
+		{{VALOR | FILTRO | FILTRO}}
+		 -->
+	</div>
+</body>
+</html>
